@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar {
+    @apply fixed z-50 h-screen top-0 opacity-80;
+  }
+  .sidebar-mobile {
+    @apply w-full bg-orange-500;
+  }
+  .sidebar-desktop {
+    @apply block bg-blue-500 min-[500px]:w-19 md:w-40 lg:w-48;
+  }
+  .ml-sidebar {
+    @apply ml-0 min-[500px]:ml-19 md:ml-40 lg:ml-48;
+  }
+}
+
+body {
+}
